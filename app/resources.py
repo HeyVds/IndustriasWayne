@@ -4,7 +4,6 @@ from .models import db, Recurso
 
 recursos_bp = Blueprint('recursos', __name__)
 
-# 🔸 GET - Listar recursos
 @recursos_bp.route('/api/recursos', methods=['GET'])
 @jwt_required()
 def listar_recursos():
@@ -16,7 +15,6 @@ def listar_recursos():
         'status': r.status
     } for r in recursos])
 
-# 🔸 POST - Adicionar recurso
 @recursos_bp.route('/api/recursos', methods=['POST'])
 @jwt_required()
 def adicionar_recurso():
@@ -30,7 +28,6 @@ def adicionar_recurso():
     db.session.commit()
     return jsonify({'msg': 'Recurso adicionado com sucesso'}), 201
 
-# 🔸 PUT - Atualizar recurso
 @recursos_bp.route('/api/recursos/<int:recurso_id>', methods=['PUT'])
 @jwt_required()
 def atualizar_recurso(recurso_id):
@@ -46,7 +43,6 @@ def atualizar_recurso(recurso_id):
     db.session.commit()
     return jsonify({'msg': 'Recurso atualizado com sucesso'})
 
-# 🔸 DELETE - Remover recurso
 @recursos_bp.route('/api/recursos/<int:recurso_id>', methods=['DELETE'])
 @jwt_required()
 def deletar_recurso(recurso_id):
