@@ -2,7 +2,7 @@
 
 Projeto final do curso **Dev Full Stack**, com o objetivo de desenvolver uma aplicação web para controle de acesso, gestão de recursos e visualização de dados internos da empresa fictícia **Indústrias Wayne**.
 
-## 🔐 Funcionalidades
+## Funcionalidades
 
 - ✅ Cadastro e login de usuários com autenticação JWT
 - ✅ Controle de acesso com base em permissões (funcionário, gerente, administrador)
@@ -13,7 +13,7 @@ Projeto final do curso **Dev Full Stack**, com o objetivo de desenvolver uma apl
 
 ---
 
-## 🛠 Tecnologias Utilizadas
+## Tecnologias Utilizadas
 
 - **Backend:** Python + Flask + Flask-JWT-Extended + SQLAlchemy
 - **Frontend:** Flet (Framework Python para UI)
@@ -23,7 +23,7 @@ Projeto final do curso **Dev Full Stack**, com o objetivo de desenvolver uma apl
 
 ---
 
-## 📦 Estrutura do Projeto
+## Estrutura do Projeto
 
 app/
 ├── auth.py # Rotas de autenticação
