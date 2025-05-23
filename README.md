@@ -1,3 +1,4 @@
+
 # Sistema de Gerenciamento de Segurança - Indústrias Wayne
 
 Projeto final do curso **Dev Full Stack**, com o objetivo de desenvolver uma aplicação web para controle de acesso, gestão de recursos e visualização de dados internos da empresa fictícia **Indústrias Wayne**.
@@ -25,17 +26,19 @@ Projeto final do curso **Dev Full Stack**, com o objetivo de desenvolver uma apl
 
 ## Estrutura do Projeto
 
+```
 app/
-├── auth.py # Rotas de autenticação
-├── config.py # Configurações do projeto
-├── models.py # Modelos do banco de dados (User, Recurso)
-├── resources.py # Rotas protegidas de CRUD dos recursos
-├── server.py # Instância e configuração do app Flask
-main.py # Integração entre Flask e Flet
+├── auth.py         
+├── config.py       
+├── models.py       
+├── resources.py    
+├── server.py       
+main.py             
+```
 
 ---
 
-## 🚀 Como Executar o Projeto
+## Como Executar o Projeto
 
 ### 1. Instale as dependências
 
@@ -43,16 +46,44 @@ main.py # Integração entre Flask e Flet
 pip install flask flask_sqlalchemy flask_jwt_extended flet psycopg2 requests
 ```
 
-## Configure o banco PostgreSQL
+### 2. Configure o banco PostgreSQL
 
-Certifique-se de que o PostgreSQL está rodando e que o banco wayne_security existe.
+Certifique-se de que o PostgreSQL está rodando e que o banco `wayne_security` existe.
 
-## Execute a aplicação
+### 3. Execute a aplicação
 
 ```bash
 python main.py
 ```
 
-### Autor
+- O Flask será executado em `http://localhost:5000`
+- A interface Flet será exibida automaticamente
 
-Victor dos santos mafra
+---
+
+## Endpoints da API
+
+| Método | Rota                      | Protegido? | Descrição                    |
+|--------|---------------------------|------------|------------------------------|
+| POST   | `/api/register`           | ❌         | Cadastra um novo usuário     |
+| POST   | `/api/login`              | ❌         | Realiza login e gera token   |
+| GET    | `/api/recursos`           | ✅         | Lista todos os recursos      |
+| POST   | `/api/recursos`           | ✅         | Cria novo recurso            |
+| PUT    | `/api/recursos/<id>`      | ✅         | Atualiza recurso existente   |
+| DELETE | `/api/recursos/<id>`      | ✅         | Remove um recurso            |
+
+> As rotas protegidas exigem o token JWT no header:  
+> `Authorization: Bearer <seu_token_aqui>`
+
+---
+
+
+## 👤 Autor
+
+**Desenvolvedor:** Victor dos Santos Mafra  
+
+---
+
+## Licença
+
+Este projeto foi desenvolvido para fins educacionais.
