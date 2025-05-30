@@ -6,16 +6,16 @@ Projeto final do curso **Dev Full Stack**, com o objetivo de desenvolver uma apl
 
 ## Funcionalidades
 
-- 🔐 Autenticação e autorização com JWT
-- 🔸 Permissões por perfil:
+- Autenticação e autorização com JWT
+- Permissões por perfil:
   - **Admin:** CRUD completo de usuários e recursos
   - **Funcionário:** Visualização e atualização de recursos
-- 📦 CRUD completo de:
+- CRUD completo de:
   - **Recursos:** veículos, equipamentos e dispositivos
   - **Usuários:** funcionários, gerentes e administradores
-- 📊 Dashboard gráfico e funcional utilizando **Flet**
-- 🗄️ Banco de dados PostgreSQL
-- 🔗 API REST integrada e testada via Insomnia
+- Dashboard gráfico e funcional utilizando **Flet**
+- Banco de dados PostgreSQL
+- API REST integrada e testada via Insomnia
 
 ---
 
@@ -31,16 +31,16 @@ Projeto final do curso **Dev Full Stack**, com o objetivo de desenvolver uma apl
 
 ## Estrutura do Projeto
 
-```
+```md
 app/
-├── auth.py          # Endpoints de autenticação
-├── config.py        # Configurações gerais
-├── models.py        # Modelos do banco de dados
-├── resources.py     # Endpoints para recursos
-├── usuarios.py      # Endpoints para usuários
-├── server.py        # Configuração e inicialização do Flask
-ui.py                # Interface gráfica (Flet)
-main.py              # Inicializa backend e frontend
+├── auth.py # Endpoints de autenticação
+├── config.py # Configurações gerais
+├── models.py # Modelos do banco de dados
+├── resources.py # Endpoints para recursos
+├── usuarios.py # Endpoints para usuários
+├── server.py # Configuração e inicialização do Flask
+ui.py # Interface gráfica (Flet)
+main.py # Inicializa backend e frontend
 ```
 
 ---
