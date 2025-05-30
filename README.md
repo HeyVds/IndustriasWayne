@@ -109,16 +109,6 @@ python main.py
 
 ---
 
-## Funcionalidades Futuras (Melhorias Possíveis)
-
-- Implementar hash de senha para segurança total
-- Deploy do backend e frontend em nuvem
-- Melhorias visuais com tema escuro, cards e componentes estilizados
-- Relatórios gráficos para gestão
-- Notificações de ações bem-sucedidas ou erros
-
----
-
 ## Autor
 
 **Victor dos Santos Mafra**  
